@@ -6,7 +6,7 @@ import numpy as np
 st.title("Crop Recommendation App")
 
 file_name="nb_model.pkl"
-with open(path.join("model",file_name),'rb')as f:
+with open(path.join(file_name),'rb')as f:
     nb_model=pickle.load(f)
 
     nv = st.number_input("Nitrogen (kg/ha)", min_value=0, max_value=900)
